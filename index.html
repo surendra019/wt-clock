@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>WT Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card time-card">
+            <i class="fas fa-clock icon"></i>
+            <h2>Current Time</h2>
+            <div id="time" class="content">
+                <div class="hours" id="hours">00:00</div>
+                <div class="date" id="date"></div>
+                <div class="day" id="day">Monday</div>
+                <!-- Time will be displayed here in the format 00:00:00, Day, Month Date -->
+            </div>
+        </div>
+        <div class="card weather-card">
+            <i class="fas fa-cloud-sun icon"></i>
+            <h2>Weather</h2>
+            <div id="weather" class="content">
+                <div class="temp" id="temp">20&deg;</div>
+                <div class="location_container"> <i class="fas fa-location-dot"></i>
+                    <div class="location" id="location"></i>City</div></div>
+               
+                <!-- Weather info will be displayed here -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

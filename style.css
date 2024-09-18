@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and container styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.card h2 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Icon styling */
+.icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Content styling */
+.content {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Time styling */
+.time-card .content {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.date, .day{
+    font-size: 1rem;
+}
+
+.weather-card{
+    position: relative;
+}
+.temp{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.fa-location-dot{
+    transform: translate(-5px, 5px);
+}
+.location_container{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
