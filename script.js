@@ -30,7 +30,7 @@ function setWeather(){
                 latitude = position.coords.latitude;
                 longitude = position.coords.longitude;
                 console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-                fetch(`http://api.weatherapi.com/v1/forecast.json?key=546373597a2d437a92944707241809&q=${latitude}, ${longitude}`).then((res)=>{
+                fetch(`https://api.weatherapi.com/v1/forecast.json?key=546373597a2d437a92944707241809&q=${latitude}, ${longitude}`).then((res)=>{
                     return res.json()
                 }).then((res)=>{
                    
